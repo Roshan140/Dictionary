@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+
+
+  <body>
+    <form action="/submit" method="post">
+      <input type="text" name="word">
+      
+    <div>{{s}}</div><br>
+     <div>{{a}}</div><br>
+     <div>{{definition}}</div>
+     
+    </form> 
+      
+    
+  
+</body>
+</html>
+
+ -->
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+        }
+        .container{
+         
+            background-color: orange;
+            border-radius: 24px;
+            width: 50%;
+        }
+        .f{
+           margin-top: 25px;
+           border-radius: 25px;
+           height: 25px;
+           font-size: large;
+           padding: 5px;
+        }
+        h1{
+            color:aliceblue;
+             margin-top:50px;
+        }
+        .a{
+            font-size: 25px;
+           
+           
+    margin-top: 20px;
+            
+        }
+        .highlight {
+            background-color: yellow;
+            padding: 2px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <center><h1>Dictionary</h1></center>
+        <form action="/submit" method="post">
+            <input type="text" class="f" name="word">
+           
+            <div class="a">Synonyms: <span class="highlight">{{s}} </span></div><br>
+            <div class="a">Antonyms: <span class="highlight">{{a}} </span></div><br>
+            <div class="a">Definition: <span class="highlight">{{definition}} </span></div>
+    </div> </form></center>
+</body>
+</html>
